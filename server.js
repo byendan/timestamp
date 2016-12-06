@@ -6,7 +6,9 @@ var monthNames = ["January", "February", "March", "April", "May", "June",
 
 var app = express()
 
-
+app.get("/", function(req, res) {
+    res.end("Please add a date or timestamp at the end of the address")
+})
 
 app.get('/:date', function (req, res) {
   
