@@ -44,6 +44,6 @@ app.get('/:date', function (req, res) {
 })
 
 
-app.listen(process.env.PORT || 8080, function() {
+app.listen((process.env.PORT || 8080), function() {
     console.log("We are listening in")
 })
