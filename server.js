@@ -1,11 +1,11 @@
 var express = require('express')
-var logger = require("morgan");
+
 var monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ]
 
 var app = express()
-app.use(logger())
+
 
 
 app.get('/:date', function (req, res) {
