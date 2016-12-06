@@ -7,6 +7,7 @@ var monthNames = ["January", "February", "March", "April", "May", "June",
 var app = express()
 app.use(logger())
 
+
 app.get('/:date', function (req, res) {
   
   var inputDate = new Date(req.params.date)
@@ -42,6 +43,7 @@ app.get('/:date', function (req, res) {
   }
 })
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!')
+
+app.listen(process.env.PORT || 8080, function() {
+    console.log("We are listening in")
 })
